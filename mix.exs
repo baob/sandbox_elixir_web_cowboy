@@ -1,9 +1,9 @@
-defmodule HelloWorldCowboy.Mixfile do
+defmodule HelloWorld.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :hello_world_cowboy,
+      app: :hello_world,
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
@@ -19,7 +19,7 @@ defmodule HelloWorldCowboy.Mixfile do
   #end
   def application do
     [
-      mod: {HelloWorldCowboy, []},
+      mod: {HelloWorld, []},
       applications: applications(Mix.env)
     ]
   end

@@ -1,6 +1,6 @@
-defmodule HelloWorldCowboy do
+defmodule HelloWorld do
   @moduledoc """
-  Documentation for HelloWorldCowboy.
+  Documentation for HelloWorld.
   """
 
   #@doc """
@@ -8,7 +8,7 @@ defmodule HelloWorldCowboy do
 
   ### Examples
 
-      #iex> HelloWorldCowboy.hello
+      #iex> HelloWorld.hello
       #:world
 
   #"""
@@ -23,8 +23,8 @@ defmodule HelloWorldCowboy do
     port = Application.get_env(:hello_world, :port)
 
     path_list = [
-      {"/hello/[:name]", HelloWorldCowboy.HelloHandler, []},
-      {"/[...]", HelloWorldCowboy.GoodbyeHandler, []},
+      {"/hello/[:name]", HelloWorld.HelloHandler, []},
+      {"/[...]", HelloWorld.GoodbyeHandler, []},
     ]
 
     routes = [{:_, path_list}]

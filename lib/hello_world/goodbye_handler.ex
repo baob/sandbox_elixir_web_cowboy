@@ -1,4 +1,4 @@
-defmodule HelloWorldCowboy.GoodbyeHandler do
+defmodule HelloWorld.GoodbyeHandler do
   def init(request, options) do
     headers = [{"content-type", "text/plain"}]
     body = "Goodbye!"
